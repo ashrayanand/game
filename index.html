@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <div style="font-family: Courier New; text-align: center">
+      <input type="radio" name="color" value="red" onClick="setColor(this)"/>RED
+      <input type="radio" name="color" value="blue" onClick="setColor(this)"/>BLUE
+      <input type="radio" name="color" value="green" onClick="setColor(this)"/>GREEN
+    </div>
+    
+    <center>
+      <div class="box-container">
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 1 </span>
+        </div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 2 </span>
+        </div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 3 </span>
+        </div>
+        <div style="clear:both"></div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 4 </span>
+        </div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 5 </span>
+        </div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 6 </span>
+        </div>
+        <div style="clear:both"></div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 7 </span>
+        </div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 8 </span>
+        </div>
+        <div class="box" onmouseout="removeBorder(this)" onmouseover="createBorder(this)" onClick="applyColor(this)">
+          <span class="numbers"> 9 </span>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <div style="margin-top: 20px">
+        <button onClick="resetColor()"> Reset </button>
+      </div>
+    </center>
+  </body>
+
+</html>
